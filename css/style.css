@@ -4262,15 +4262,7 @@ body.tour-open .animated {
     border-bottom: 1px solid #e7eaec;
 }
 
-html,
-body {
-    height: 100%;
-}
 
-body.full-height-layout #wrapper,
-body.full-height-layout #page-wrapper {
-    height: 100%;
-}
 
 #page-wrapper {
     min-height: auto;
@@ -4464,7 +4456,7 @@ video {
     background: #fff;
     display: block;
     position: absolute;
-    min-height: 680px;
+    min-height: 730px;
     width: 100%;
     border: 0;
     margin-top: 40px;
