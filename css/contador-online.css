@@ -1,0 +1,231 @@
+a.btn-close {
+    color: #fff;
+}
+
+.btn-close.focus,
+.btn-close:focus,
+.btn-close:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+.line-orange {
+    background-color: #f60;
+    height: 5px;
+}
+
+.btn-calendar {
+    margin-right: 5px;
+    margin-top: 15px;
+}
+
+.btn-calendar i {
+    margin-right: 10px;
+}
+
+h1.tl-page {
+    color: #0066b3;
+    font-size: 25px;
+    display: inline-block;
+    margin-top: 0;
+    font-weight: 700;
+}
+
+.box-filter {
+    border-top: 1px solid #f5f5f5;
+    border-bottom: 0px;
+    padding: 7px 0px;
+}
+
+.box-filter span {
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.box-content {
+    border: 0;
+    padding: 0px 20px 20px 0px;
+}
+
+.form-inline .form-control {
+    width: 100%;
+}
+
+.btn-filter i {
+    margin-right: 10px;
+}
+
+p.tl-table {
+    font-size: 20px;
+    font-weight: 400;
+    background-color: #eee;
+    padding: 10px 15px;
+}
+
+a.btn {
+    height: 30px;
+    padding: 5px 20px;
+}
+
+input.form-control,
+select.form-control {
+    margin-bottom: 10px;
+}
+
+select.form-control {
+    border-radius: 0;
+    width: 100%;
+    background-color: #eee;
+    height: 30px;
+    padding: 3px 12px;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 1px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+
+div.form-group input[type=text] {
+    width: 100%;
+    display: inline-block;
+    height: 30px;
+}
+
+.box {
+    margin-bottom: 10px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(238, 238, 238);
+    border-image: initial;
+    border-radius: 10px;
+    padding: 10px 20px 20px;
+}
+
+.box p {
+    color: rgb(0, 102, 179);
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+nav.pagination {
+    display: inline-block;
+    float: left;
+    margin: 0px 0px 20px;
+}
+
+.pagination {
+    display: inline-block;
+    padding-left: 0px;
+    border-radius: 4px;
+}
+
+.pagination>.active>a,
+.pagination>.active>a:hover,
+.pagination>.active>a:active,
+.pagination>.active>a:focus {
+    z-index: 3;
+    color: #fff;
+    cursor: default;
+    background-color: #337ab7;
+    border-color: #337ab7;
+    padding: 6px 12px;
+}
+
+.pagination>li>a {
+    padding: 6px 12px;
+    color: #337ab7;
+}
+
+.btn-export {
+    float: right;
+    background-color: rgb(240, 173, 78);
+    border-width: 0px;
+    border-style: initial;
+    border-color: initial;
+    border-image: initial;
+}
+
+.box label {
+    font-weight: 400;
+}
+
+.box input[type=checkbox] {
+    margin-bottom: 15px;
+}
+
+label.checkbox-dep {
+    margin-top: 10px;
+    font-weight: 400;
+}
+
+label.checkbox-dep input {
+    margin-right: 10px;
+}
+
+label.checkbox-inline {
+    margin-top: 30px;
+}
+
+a.btn-acao {
+    float: right;
+    margin-right: 10px;
+}
+
+.table-horarios thead tr th:first-child {
+    width: 40%;
+}
+
+.table-horarios thead tr th:nth-child(2),
+.table-horarios thead tr th:nth-child(3),
+.table-horarios thead tr th:nth-child(4),
+.table-horarios thead tr th:nth-child(5) {
+    text-align: center;
+}
+
+i.fa-minus-circle,
+i.fa-plus-circle {
+    margin-right: 10px;
+}
+
+.scroll1::-webkit-scrollbar {
+    width: 5px;
+}
+
+.scroll1::-webkit-scrollbar-track {
+    background: #ddd;
+}
+
+.scroll1::-webkit-scrollbar-thumb {
+    background: #666;
+}
+
+@media screen and (max-width: 767px) {
+    .btn-calendar {
+        float: none;
+        margin-top: 10px;
+    }
+    ul.nav.nav-tabs li {
+        display: inline-block;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    ul.nav.nav-tabs li {
+        width: 100%;
+    }
+}

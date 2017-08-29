@@ -1,0 +1,1016 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title></title>
+
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../font-awesome/css/font-awesome.css" rel="stylesheet">
+
+    <link href="../../css/plugins/iCheck/custom.css" rel="stylesheet">
+
+    <link href="../../css/plugins/fullcalendar/fullcalendar.css" rel="stylesheet">
+    <link href="../../css/plugins/fullcalendar/fullcalendar.print.css" rel='stylesheet' media='print'>
+
+    <link href="../../css/animate.css" rel="stylesheet">
+    <link href="../../css/style.css" rel="stylesheet">
+    <link href="../../css/contador-online.css" rel="stylesheet">
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+
+</head>
+
+<body>
+
+    <div class="row wrapper white-bg page-heading">
+
+    </div>
+    <div class="animated fadeIn">
+            <div class="col-lg-12">
+                <h1 class="tl-page">Listagem de Funcionários</h1>
+            </div>
+        <div class="row ibox-title">
+            <div class="col-lg-12">
+
+                <div class="tabs-container">
+                    <ul class="nav nav-tabs">
+                        <li class="active"><a data-toggle="tab" href="#tab-1">Dados Cadastrais</a></li>
+                        <li class=""><a data-toggle="tab" href="#tab-2">Códigos Oficiais</a></li>
+                        <li class=""><a data-toggle="tab" href="#tab-3">Documentos</a></li>
+                    </ul>
+                    <div class="tab-content">
+                        <div id="tab-1" class="tab-pane active">
+                            <div class="panel-body">
+                                <div class="col-lg-12 box">
+                                    <p>Dados Cadastrais</p>
+                                    <form role="form" class="form-inline">
+                                        <div class="row">
+                                            <div class="form-group col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                                                <label>Nome*</label>
+                                                <input type="text" class="form-control" placeholder="">
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="form-group col-lg-2 col-md-2 col-sm-2 col-xs-12">
+                                                <label>CEP*</label>
+                                                <input type="text" class="form-control" id="cep" placeholder="">
+                                            </div>
+                                            <div class="form-group col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                                <label>Endereço*</label>
+                                                <input type="text" class="form-control" placeholder="">
+                                            </div>
+                                            <div class="form-group col-lg-2 col-md-2 col-sm-2 col-xs-12">
+                                                <label>Nº</label>
+                                                <input type="text" class="form-control" placeholder="">
+                                            </div>
+                                            <div class="form-group col-lg-2 col-md-2 col-sm-2 col-xs-12">
+                                                <label>Complemento</label>
+                                                <input type="text" class="form-control" placeholder="">
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="form-group col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                                                <label>Bairro</label>
+                                                <input type="text" class="form-control" id="cep" placeholder="">
+                                            </div>
+                                            <div class="form-group col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                                                <label>Cidade*</label>
+                                                <input type="text" class="form-control" placeholder="">
+                                            </div>
+                                            <div class="form-group col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                                                <label>UF*</label>
+                                                <select class="form-control" name="uf" id="uf">
+                                                    <option value="">Selecione um Estado</option>
+                                                    <option value="AC">AC</option>
+                                                    <option value="AL">AL</option>
+                                                    <option value="AM">AM</option>
+                                                    <option value="AP">AP</option>
+                                                    <option value="BA">BA</option>
+                                                    <option value="CE">CE</option>
+                                                    <option value="DF">DF</option>
+                                                    <option value="ES">ES</option>
+                                                    <option value="GO">GO</option>
+                                                    <option value="MA">MA</option>
+                                                    <option value="MG">MG</option>
+                                                    <option value="MS">MS</option>
+                                                    <option value="MT">MT</option>
+                                                    <option value="PA">PA</option>
+                                                    <option value="PB">PB</option>
+                                                    <option value="PE">PE</option>
+                                                    <option value="PI">PI</option>
+                                                    <option value="PR">PR</option>
+                                                    <option value="RJ">RJ</option>
+                                                    <option value="RN">RN</option>
+                                                    <option value="RS">RS</option>
+                                                    <option value="RO">RO</option>
+                                                    <option value="RR">RR</option>
+                                                    <option value="SC">SC</option>
+                                                    <option value="SE">SE</option>
+                                                    <option value="SP">SP</option>
+                                                    <option value="TO">TO</option>
+                                                 </select>
+                                            </div>
+                                            <div class="form-group col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                                                <label>País*</label>
+                                                <select class="form-control" name=Pais>
+                                                    <option value="África do Sul">África do Sul</option>
+                                                    <option value="Albânia">Albânia</option>
+                                                    <option value="Alemanha">Alemanha</option>
+                                                    <option value="Andorra">Andorra</option>
+                                                    <option value="Angola">Angola</option>
+                                                    <option value="Anguilla">Anguilla</option>
+                                                    <option value="Antigua">Antigua</option>
+                                                    <option value="Arábia Saudita">Arábia Saudita</option>
+                                                    <option value="Argentina">Argentina</option>
+                                                    <option value="Armênia">Armênia</option>
+                                                    <option value="Aruba">Aruba</option>
+                                                    <option value="Austrália">Austrália</option>
+                                                    <option value="Áustria">Áustria</option>
+                                                    <option value="Azerbaijão">Azerbaijão</option>
+                                                    <option value="Bahamas">Bahamas</option>
+                                                    <option value="Bahrein">Bahrein</option>
+                                                    <option value="Bangladesh">Bangladesh</option>
+                                                    <option value="Barbados">Barbados</option>
+                                                    <option value="Bélgica">Bélgica</option>
+                                                    <option value="Benin">Benin</option>
+                                                    <option value="Bermudas">Bermudas</option>
+                                                    <option value="Botsuana">Botsuana</option>
+                                                    <option value="Brasil" selected>Brasil</option>
+                                                    <option value="Brunei">Brunei</option>
+                                                    <option value="Bulgária">Bulgária</option>
+                                                    <option value="Burkina Fasso">Burkina Fasso</option>
+                                                    <option value="botão">botão</option>
+                                                    <option value="Cabo Verde">Cabo Verde</option>
+                                                    <option value="Camarões">Camarões</option>
+                                                    <option value="Camboja">Camboja</option>
+                                                    <option value="Canadá">Canadá</option>
+                                                    <option value="Cazaquistão">Cazaquistão</option>
+                                                    <option value="Chade">Chade</option>
+                                                    <option value="Chile">Chile</option>
+                                                    <option value="China">China</option>
+                                                    <option value="Cidade do Vaticano">Cidade do Vaticano</option>
+                                                    <option value="Colômbia">Colômbia</option>
+                                                    <option value="Congo">Congo</option>
+                                                    <option value="Coréia do Sul">Coréia do Sul</option>
+                                                    <option value="Costa do Marfim">Costa do Marfim</option>
+                                                    <option value="Costa Rica">Costa Rica</option>
+                                                    <option value="Croácia">Croácia</option>
+                                                    <option value="Dinamarca">Dinamarca</option>
+                                                    <option value="Djibuti">Djibuti</option>
+                                                    <option value="Dominica">Dominica</option>
+                                                    <option value="EUA">EUA</option>
+                                                    <option value="Egito">Egito</option>
+                                                    <option value="El Salvador">El Salvador</option>
+                                                    <option value="Emirados Árabes">Emirados Árabes</option>
+                                                    <option value="Equador">Equador</option>
+                                                    <option value="Eritréia">Eritréia</option>
+                                                    <option value="Escócia">Escócia</option>
+                                                    <option value="Eslováquia">Eslováquia</option>
+                                                    <option value="Eslovênia">Eslovênia</option>
+                                                    <option value="Espanha">Espanha</option>
+                                                    <option value="Estônia">Estônia</option>
+                                                    <option value="Etiópia">Etiópia</option>
+                                                    <option value="Fiji">Fiji</option>
+                                                    <option value="Filipinas">Filipinas</option>
+                                                    <option value="Finlândia">Finlândia</option>
+                                                    <option value="França">França</option>
+                                                    <option value="Gabão">Gabão</option>
+                                                    <option value="Gâmbia">Gâmbia</option>
+                                                    <option value="Gana">Gana</option>
+                                                    <option value="Geórgia">Geórgia</option>
+                                                    <option value="Gibraltar">Gibraltar</option>
+                                                    <option value="Granada">Granada</option>
+                                                    <option value="Grécia">Grécia</option>
+                                                    <option value="Guadalupe">Guadalupe</option>
+                                                    <option value="Guam">Guam</option>
+                                                    <option value="Guatemala">Guatemala</option>
+                                                    <option value="Guiana">Guiana</option>
+                                                    <option value="Guiana Francesa">Guiana Francesa</option>
+                                                    <option value="Guiné-bissau">Guiné-bissau</option>
+                                                    <option value="Haiti">Haiti</option>
+                                                    <option value="Holanda">Holanda</option>
+                                                    <option value="Honduras">Honduras</option>
+                                                    <option value="Hong Kong">Hong Kong</option>
+                                                    <option value="Hungria">Hungria</option>
+                                                    <option value="Iêmen">Iêmen</option>
+                                                    <option value="Ilhas Cayman">Ilhas Cayman</option>
+                                                    <option value="Ilhas Cook">Ilhas Cook</option>
+                                                    <option value="Ilhas Curaçao">Ilhas Curaçao</option>
+                                                    <option value="Ilhas Marshall">Ilhas Marshall</option>
+                                                    <option value="Ilhas Turks & Caicos">Ilhas Turks & Caicos</option>
+                                                    <option value="Ilhas Virgens (brit.)">Ilhas Virgens (brit.)</option>
+                                                    <option value="Ilhas Virgens(amer.)">Ilhas Virgens(amer.)</option>
+                                                    <option value="Ilhas Wallis e Futuna">Ilhas Wallis e Futuna</option>
+                                                    <option value="Índia">Índia</option>
+                                                    <option value="Indonésia">Indonésia</option>
+                                                    <option value="Inglaterra">Inglaterra</option>
+                                                    <option value="Irlanda">Irlanda</option>
+                                                    <option value="Islândia">Islândia</option>
+                                                    <option value="Israel">Israel</option>
+                                                    <option value="Itália">Itália</option>
+                                                    <option value="Jamaica">Jamaica</option>
+                                                    <option value="Japão">Japão</option>
+                                                    <option value="Jordânia">Jordânia</option>
+                                                    <option value="Kuwait">Kuwait</option>
+                                                    <option value="Latvia">Latvia</option>
+                                                    <option value="Líbano">Líbano</option>
+                                                    <option value="Liechtenstein">Liechtenstein</option>
+                                                    <option value="Lituânia">Lituânia</option>
+                                                    <option value="Luxemburgo">Luxemburgo</option>
+                                                    <option value="Macau">Macau</option>
+                                                    <option value="Macedônia">Macedônia</option>
+                                                    <option value="Madagascar">Madagascar</option>
+                                                    <option value="Malásia">Malásia</option>
+                                                    <option value="Malaui">Malaui</option>
+                                                    <option value="Mali">Mali</option>
+                                                    <option value="Malta">Malta</option>
+                                                    <option value="Marrocos">Marrocos</option>
+                                                    <option value="Martinica">Martinica</option>
+                                                    <option value="Mauritânia">Mauritânia</option>
+                                                    <option value="Mauritius">Mauritius</option>
+                                                    <option value="México">México</option>
+                                                    <option value="Moldova">Moldova</option>
+                                                    <option value="Mônaco">Mônaco</option>
+                                                    <option value="Montserrat">Montserrat</option>
+                                                    <option value="Nepal">Nepal</option>
+                                                    <option value="Nicarágua">Nicarágua</option>
+                                                    <option value="Niger">Niger</option>
+                                                    <option value="Nigéria">Nigéria</option>
+                                                    <option value="Noruega">Noruega</option>
+                                                    <option value="Nova Caledônia">Nova Caledônia</option>
+                                                    <option value="Nova Zelândia">Nova Zelândia</option>
+                                                    <option value="Omã">Omã</option>
+                                                    <option value="Palau">Palau</option>
+                                                    <option value="Panamá">Panamá</option>
+                                                    <option value="Papua-nova Guiné">Papua-nova Guiné</option>
+                                                    <option value="Paquistão">Paquistão</option>
+                                                    <option value="Peru">Peru</option>
+                                                    <option value="Polinésia Francesa">Polinésia Francesa</option>
+                                                    <option value="Polônia">Polônia</option>
+                                                    <option value="Porto Rico">Porto Rico</option>
+                                                    <option value="Portugal">Portugal</option>
+                                                    <option value="Qatar">Qatar</option>
+                                                    <option value="Quênia">Quênia</option>
+                                                    <option value="Rep. Dominicana">Rep. Dominicana</option>
+                                                    <option value="Rep. Tcheca">Rep. Tcheca</option>
+                                                    <option value="Reunion">Reunion</option>
+                                                    <option value="Romênia">Romênia</option>
+                                                    <option value="Ruanda">Ruanda</option>
+                                                    <option value="Rússia">Rússia</option>
+                                                    <option value="Saipan">Saipan</option>
+                                                    <option value="Samoa Americana">Samoa Americana</option>
+                                                    <option value="Senegal">Senegal</option>
+                                                    <option value="Serra Leone">Serra Leone</option>
+                                                    <option value="Seychelles">Seychelles</option>
+                                                    <option value="Singapura">Singapura</option>
+                                                    <option value="Síria">Síria</option>
+                                                    <option value="Sri Lanka">Sri Lanka</option>
+                                                    <option value="St. Kitts & Nevis">St. Kitts & Nevis</option>
+                                                    <option value="St. Lúcia">St. Lúcia</option>
+                                                    <option value="St. Vincent">St. Vincent</option>
+                                                    <option value="Sudão">Sudão</option>
+                                                    <option value="Suécia">Suécia</option>
+                                                    <option value="Suiça">Suiça</option>
+                                                    <option value="Suriname">Suriname</option>
+                                                    <option value="Tailândia">Tailândia</option>
+                                                    <option value="Taiwan">Taiwan</option>
+                                                    <option value="Tanzânia">Tanzânia</option>
+                                                    <option value="Togo">Togo</option>
+                                                    <option value="Trinidad & Tobago">Trinidad & Tobago</option>
+                                                    <option value="Tunísia">Tunísia</option>
+                                                    <option value="Turquia">Turquia</option>
+                                                    <option value="Ucrânia">Ucrânia</option>
+                                                    <option value="Uganda">Uganda</option>
+                                                    <option value="Uruguai">Uruguai</option>
+                                                    <option value="Venezuela">Venezuela</option>
+                                                    <option value="Vietnã">Vietnã</option>
+                                                    <option value="Zaire">Zaire</option>
+                                                    <option value="Zâmbia">Zâmbia</option>
+                                                    <option value="Zimbábue">Zimbábue</option>
+                                                    </select>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="form-group col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                                                <label>Cod. Município*</label>
+                                                <select class="form-control" name="uf" id="uf">
+                                                    <option value="">Selecione um Município</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                                                <label>Caixa Posta</label>
+                                                <input type="text" class="form-control" placeholder="">
+                                            </div>
+                                            <div class="form-group col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                                                <label>Telefone</label>
+                                                <input type="text" class="form-control" placeholder="">
+                                            </div>
+                                            <div class="form-group col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                                                <label>Celular</label>
+                                                <input type="text" class="form-control" placeholder="">
+                                            </div>
+                                        </div>
+
+
+                                        <div class="row">
+                                            <div class="form-group col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                                <label>E-mail*</label>
+                                                <input type="email" class="form-control" placeholder="">
+                                            </div>
+                                            <div class="form-group col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                                <label>Nome da Mãe</label>
+                                                <input type="text" class="form-control" placeholder="">
+                                            </div>
+                                            <div class="form-group col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                                <label>Nome do Pai</label>
+                                                <input type="text" class="form-control" placeholder="">
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+
+                                <div class="col-lg-12 box">
+                                    <p>Nascimento</p>
+                                    <form role="form" class="form-inline">
+                                        <div class="row">
+                                            <div class="form-group col-lg-2 col-md-2 col-sm-2 col-xs-12">
+                                                <label>Data*</label>
+                                                <input type="campoData" class="form-control" placeholder="">
+                                            </div>
+
+                                            <div class="form-group col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                                                <label>UF*</label>
+                                                <select class="form-control">
+                                                    <option value="">Selecione um Estado</option>
+                                                 </select>
+                                            </div>
+
+                                            <div class="form-group col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                                                <label>País de Origem*</label>
+                                                <select class="form-control">
+                                                    <option value="">Selecione um País</option>
+                                                 </select>
+                                            </div>
+
+                                            <div class="form-group col-lg-2 col-md-2 col-sm-2 col-xs-12">
+                                                <label>Código do Município*</label>
+                                                <select class="form-control">
+                                                    <option value="">Selecione um Município</option>
+                                                 </select>
+                                            </div>
+
+                                            <div class="form-group col-lg-2 col-md-2 col-sm-2 col-xs-12">
+                                                <label>Naturalidade*</label>
+                                                <input type="text" class="form-control" placeholder="">
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+
+                                <div class="col-lg-12 box">
+                                    <p>Deficiente Físico</p>
+                                    <form role="form" class="form-inline">
+                                        <div class="row">
+                                            <div class="form-group col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                                                <label>Tipo*</label>
+                                                <select class="form-control">
+                                                    <option value="">0 - Não é portador de deficiência</option>
+                                                    <option value="">1 - Física</option>
+                                                    <option value="">2 - Auditiva</option>
+                                                    <option value="">3 - Visual</option>
+                                                    <option value="">4 - Intelectual (Mental)</option>
+                                                    <option value="">5 - Múltipla</option>
+                                                    <option value="">6 - Reabilitado</option>
+                                                 </select>
+                                            </div>
+                                            <div class="form-group col-lg-9 col-md-9 col-sm-9 col-xs-12">
+                                                <label>Observação</label>
+                                                <input type="text" class="form-control" placeholder="">
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+
+                                <div class="col-lg-12 box">
+                                    <p>Raça / Cor</p>
+                                    <form role="form" class="form-inline">
+                                        <div class="row">
+                                            <div class="form-group col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                                                <label>Raça / Cor*</label>
+                                                <select class="form-control">
+                                                    <option value="">0 - Não é portador de deficiência</option>
+                                                    <option value="">1 - Física</option>
+                                                    <option value="">2 - Auditiva</option>
+                                                    <option value="">3 - Visual</option>
+                                                    <option value="">4 - Intelectual (Mental)</option>
+                                                    <option value="">5 - Múltipla</option>
+                                                    <option value="">6 - Reabilitado</option>
+                                                 </select>
+                                            </div>
+
+                                            <div class="form-group col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                                                <label>Sexo*</label>
+                                                <select class="form-control">
+                                                    <option value="">Selecione o Sexo</option>
+                                                    <option value="">1 - Masculino</option>
+                                                    <option value="">2 - Feminina</option>
+                                                 </select>
+                                            </div>
+
+                                            <div class="form-group col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                                                <label>Estado Civil*</label>
+                                                <select class="form-control">
+                                                    <option value="">Selecine o Estado Civil</option>
+                                                    <option value="">1 - Solteir(a)</option>
+                                                    <option value="">2 - Casado(a)</option>
+                                                    <option value="">3 - Divorcido(a)</option>
+                                                    <option value="">4 - Viuvo(a)</option>
+                                                    <option value="">5 - Desquitado</option>
+                                                    <option value="">6 - União Estável</option>
+                                                    <option value="">7 - Outros</option>
+                                                 </select>
+                                            </div>
+
+                                            <div class="form-group col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                                                <label>Tipo Sanguíneo</label>
+                                                <select class="form-control">
+                                                    <option value="">Selecione o Tipo Sanguíneo</option>
+                                                    <option value="">1 - O+</option>
+                                                    <option value="">2 - O-</option>
+                                                    <option value="">3 - A+</option>
+                                                    <option value="">4 - A-</option>
+                                                    <option value="">5 - B+</option>
+                                                    <option value="">6 - B-</option>
+                                                    <option value="">7 - AB+/option>
+                                                    <option value="">8 - AB-</option>
+                                                 </select>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+
+                                <div class="col-lg-12 box">
+                                    <p>Classe INSS</p>
+                                    <form role="form" class="form-inline">
+                                        <div class="row">
+                                            <div class="form-group col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                                <label>Código de Admissão*</label>
+                                                <select class="form-control">
+                                                    <option value="">Selecione o Código de Admissão do Sócio</option>
+                                                 </select>
+                                            </div>
+                                            <div class="form-group col-lg-2 col-md-2 col-sm-2 col-xs-12">
+                                                <label>Data Início*</label>
+                                                <input type="text" class="form-control" placeholder="">
+                                            </div>
+                                            <div class="form-group col-lg-2 col-md-2 col-sm-2 col-xs-12">
+                                                <label>Data Fim*</label>
+                                                <input type="text" class="form-control" placeholder="">
+                                            </div>
+
+                                            <div class="form-group col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                                <label>Código Pagamento GPS*</label>
+                                                <select class="form-control">
+                                                    <option value="">Selecione o Código de Pagamento GPS</option>
+                                                 </select>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="form-group col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                                                <label>Local</label>
+                                                <select class="form-control">
+                                                    <option value="">Selecione o Local</option>
+                                                 </select>
+                                            </div>
+                                            <div class="form-group col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                                                <label>Departamento</label>
+                                                <select class="form-control">
+                                                    <option value="">Selecione o Departamento</option>
+                                                 </select>
+                                            </div>
+                                            <div class="form-group col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                                                <label>Setor</label>
+                                                <select class="form-control">
+                                                    <option value="">Selecione o Setor</option>
+                                                 </select>
+                                            </div>
+
+                                            <div class="form-group col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                                                <label>Seção</label>
+                                                <select class="form-control">
+                                                    <option value="">Selecione a Seção</option>
+                                                 </select>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+
+
+                                <a href="" class="btn btn-acao btn-danger"><i class="fa fa-times" aria-hidden="true"></i> Cancelar</a>
+                                <a href="" class="btn btn-acao btn-primary"><i class="fa fa-check" aria-hidden="true"></i> Confirmar</a>
+
+                            </div>
+                        </div>
+                        <div id="tab-2" class="tab-pane">
+                            <div class="panel-body">
+                                <div class="col-lg-12 box">
+                                    <p>Rais / Caged</p>
+                                    <form role="form" class="form-inline">
+                                        <div class="row">
+                                            <div class="form-group col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                                                <label>Nacionalidade*</label>
+                                                <select name="" id="" class="form-control">
+                                                    <option value="">Selecione a Nacionalidade</option>
+                                                </select>
+                                            </div>
+
+                                            <div class="form-group col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                                                <label>Data de Chegada</label>
+                                                <input type="text" class="form-control" id="campoData" placeholder="" disabled>
+                                            </div>
+
+                                            <div class="form-group col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                                                <label>Portaria de Naturalização</label>
+                                                <input type="text" class="form-control" placeholder="" disabled>
+                                            </div>
+
+                                            <div class="form-group col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                                                <label>Data de Naturalização</label>
+                                                <input type="text" class="form-control" id="campoData" placeholder="" disabled>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="form-group col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                                <label class="checkbox-dep"> <input type="checkbox" value="option1" id="inlineCheckbox1"> Casado(a) com Brasileiro(a)</label>
+                                            </div>
+                                            <div class="form-group col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                                <label class="checkbox-dep"> <input type="checkbox" value="option1" id="inlineCheckbox1"> Possui filhos(as) Brasileiros(as)</label>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="form-group col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                                                <label>Vínculo Empregatício</label>
+                                                <select name="" id="" class="form-control">
+                                                    <option value="">Selecione o Vínculo Empregatício</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                                                <label>Situação Caged</label>
+                                                <select name="" id="" class="form-control">
+                                                    <option value="">Selecione a Situação Caged</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                                                <label>Grau de Instrução*</label>
+                                                <select name="" id="" class="form-control">
+                                                    <option value="">Selecione o Grau de Instrução</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                                                <label>Formação Acadêmica</label>
+                                                <select name="" id="" class="form-control">
+                                                    <option value="">Selecione a Formação Acadêmica</option>
+                                                </select>
+                                            </div>
+
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="col-lg-12 box">
+                                    <p>Dados da Folha</p>
+                                    <form role="form" class="form-inline">
+                                        <div class="row">
+                                            <div class="form-group col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                                <label>Pró-Labore</label>
+                                                <input type="text" class="form-control" id="campoData" placeholder="" disabled>
+                                            </div>
+
+                                            <div class="form-group col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                                <label>Horas Semanais</label>
+                                                <input type="text" class="form-control" id="campoData" placeholder="" disabled>
+                                            </div>
+
+                                            <div class="form-group col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                                <label>Horas Mensais</label>
+                                                <input type="text" class="form-control" id="campoData" placeholder="" disabled>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="col-lg-12 box">
+                                    <p>Conta Bancária</p>
+                                    <form role="form" class="form-inline">
+                                        <div class="row">
+                                            <div class="form-group col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                                                <label>Tipo Conta</label>
+                                                <select id="" class="form-control">
+                                                    <option value="">Selecione o Tipo da Conta</option>
+                                                </select>
+                                            </div>
+
+                                            <div class="form-group col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                                                <label>Bancos</label>
+                                                <select id="" class="form-control">
+                                                    <option value="">Selecione o Banco</option>
+                                                </select>
+                                            </div>
+
+                                            <div class="form-group col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                                                <label>Agência</label>
+                                                <input type="text" class="form-control" placeholder="">
+                                            </div>
+
+                                            <div class="form-group col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                                                <label>Número da Conta</label>
+                                                <input type="text" class="form-control" placeholder="">
+                                            </div>
+
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="col-lg-12 box">
+                                    <p>Exame Médico</p>
+                                    <form role="form" class="form-inline">
+                                        <div class="row">
+                                            <div class="form-group col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                                                <label>Data</label>
+                                                <input type="text" class="form-control" placeholder="">
+                                            </div>
+
+                                            <div class="form-group col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                                                <label>Validade (Qtde Meses)</label>
+                                                <input type="text" class="form-control" placeholder="">
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="col-lg-12 box">
+                                    <p>FGTS</p>
+                                    <form role="form" class="form-inline">
+                                        <div class="row">
+                                            <div class="form-group col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                                                <label>Ocorrência</label>
+                                                <select name="" id="" class="form-control">
+                                                    <option value="">Selecione a Ocorrência</option>
+                                                </select>
+                                            </div>
+
+                                            <div class="form-group col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                                                <label>Cargo*</label>
+                                                <select name="" id="" class="form-control">
+                                                    <option value="">Selecione o Cargo</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="col-lg-12 box">
+                                    <p>Informações sobre Imóvel</p>
+                                    <form role="form" class="form-inline">
+                                        <div class="row">
+                                            <div class="form-group col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                                <label class="checkbox-dep"> <input type="checkbox" value="option1" id="inlineCheckbox1"> Possui Residência Própria</label>
+                                            </div>
+                                            <div class="form-group col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                                <label class="checkbox-dep"> <input type="checkbox" value="option1" id="inlineCheckbox1"> Possui imóvel adquirido com recurso do FGTS</label>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <a href="" class="btn btn-acao btn-danger"><i class="fa fa-times" aria-hidden="true"></i> Cancelar</a>
+                                <a href="" class="btn btn-acao btn-primary"><i class="fa fa-check" aria-hidden="true"></i> Confirmar</a>
+                            </div>
+                        </div>
+                        <div id="tab-3" class="tab-pane">
+                            <div class="panel-body">
+                                <div class="col-lg-12 box">
+                                    <p>CTPS</p>
+                                    <form role="form" class="form-inline">
+                                        <div class="row">
+                                            <div class="form-group col-lg-3">
+                                                <label>Número</label>
+                                                <input type="text" class="form-control" placeholder="">
+                                            </div>
+
+                                            <div class="form-group col-lg-3">
+                                                <label>Série</label>
+                                                <input type="text" class="form-control" placeholder="">
+                                            </div>
+
+                                            <div class="form-group col-lg-3">
+                                                <label>UF</label>
+                                                <select name="" id="" class="form-control">
+                                                    <option value="">Selecione a UF</option>
+                                                </select>
+                                            </div>
+
+                                            <div class="form-group col-lg-3">
+                                                <label>Expedição</label>
+                                                <input type="text" class="form-control" placeholder="">
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="col-lg-12 box">
+                                    <p>Título de Eleitor</p>
+                                    <form role="form" class="form-inline">
+                                        <div class="row">
+                                            <div class="form-group col-lg-6">
+                                                <label>Número</label>
+                                                <input type="text" class="form-control" placeholder="">
+                                            </div>
+
+                                            <div class="form-group col-lg-3">
+                                                <label>Zona</label>
+                                                <input type="text" class="form-control" placeholder="">
+                                            </div>
+
+                                            <div class="form-group col-lg-3">
+                                                <label>Seção</label>
+                                                <input type="text" class="form-control" placeholder="">
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="col-lg-12 box">
+                                    <p>PIS</p>
+                                    <form role="form" class="form-inline">
+                                        <div class="row">
+                                            <div class="form-group col-lg-3">
+                                                <label>Número</label>
+                                                <input type="text" class="form-control" placeholder="">
+                                            </div>
+
+                                            <div class="form-group col-lg-3">
+                                                <label>Data de Cadastro</label>
+                                                <input type="text" class="form-control" placeholder="">
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="col-lg-12 box">
+                                    <p>Inscrição INSS</p>
+                                    <form role="form" class="form-inline">
+                                        <div class="row">
+                                            <div class="form-group col-lg-3">
+                                                <label>Data*</label>
+                                                <input type="text" class="form-control" placeholder="">
+                                            </div>
+
+                                            <div class="form-group col-lg-3">
+                                                <label>Número</label>
+                                                <input type="text" class="form-control" placeholder="">
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="col-lg-12 box">
+                                    <p>RG</p>
+                                    <form role="form" class="form-inline">
+                                        <div class="row">
+                                            <div class="form-group col-lg-3">
+                                                <label>Número</label>
+                                                <input type="text" class="form-control" placeholder="">
+                                            </div>
+
+                                            <div class="form-group col-lg-3">
+                                                <label>Data de Expedição</label>
+                                                <input type="text" class="form-control" placeholder="">
+                                            </div>
+                                            
+                                            <div class="form-group col-lg-3">
+                                                <label>Órgão Emissor</label>
+                                                <select name="" id="" class="form-control">
+                                                    <option value="">Selecione o Órgão Emissor</option>
+                                                </select>
+                                            </div>
+                                            
+                                            <div class="form-group col-lg-3">
+                                                <label>UF</label>
+                                                <select name="" id="" class="form-control">
+                                                    <option value="">Selecione a UF</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="col-lg-12 box">
+                                    <p>CPF</p>
+                                    <form role="form" class="form-inline">
+                                        <div class="row">
+                                            <div class="form-group col-lg-3">
+                                                <label>Número</label>
+                                                <input type="text" class="form-control" placeholder="">
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="col-lg-12 box">
+                                    <p>CNH - Carteira Nacional de Habilitação</p>
+                                    <form role="form" class="form-inline">
+                                        <div class="row">
+                                            <div class="form-group col-lg-3">
+                                                <label>Número</label>
+                                                <input type="text" class="form-control" placeholder="">
+                                            </div>
+
+                                            <div class="form-group col-lg-2">
+                                                <label>Categoria</label>
+                                                <input type="text" class="form-control" placeholder="">
+                                            </div>
+                                            
+                                            <div class="form-group col-lg-2">
+                                                <label>Data Expedição</label>
+                                                <input type="text" class="form-control" placeholder="">
+                                            </div>
+                                            
+                                            <div class="form-group col-lg-3">
+                                                <label>Órgão Emissor</label>
+                                                <select name="" id="" class="form-control">
+                                                    <option value="">Selecione o Órgão Emissor</option>
+                                                </select>
+                                            </div>
+                                            
+                                            <div class="form-group col-lg-2">
+                                                <label>Validade</label>
+                                                <input type="text" class="form-control" placeholder="">
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="col-lg-12 box">
+                                    <p>RIC - Registro de Identidade Civil</p>
+                                    <form role="form" class="form-inline">
+                                        <div class="row">
+                                            <div class="form-group col-lg-3">
+                                                <label>Número</label>
+                                                <input type="text" class="form-control" placeholder="">
+                                            </div>
+                                            
+                                            <div class="form-group col-lg-2">
+                                                <label>Data Expedição</label>
+                                                <input type="text" class="form-control" placeholder="">
+                                            </div>
+                                            
+                                            <div class="form-group col-lg-3">
+                                                <label>Órgão Emissor</label>
+                                                <select name="" id="" class="form-control">
+                                                    <option value="">Selecione o Órgão Emissor</option>
+                                                </select>
+                                            </div>
+                                            
+                                            <div class="form-group col-lg-3">
+                                                <label>UF</label>
+                                                <select name="" id="" class="form-control">
+                                                    <option value="">Selecione a UF</option>
+                                                </select>
+                                            </div>
+                                            
+                                            <div class="form-group col-lg-2">
+                                                <label>Município</label>
+                                                <input type="text" class="form-control" placeholder="">
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="col-lg-12 box">
+                                    <p>Ficha Informatizada</p>
+                                    <form role="form" class="form-inline">
+                                        <div class="row">
+                                            <div class="form-group col-lg-6">
+                                                <label>Nome do Conselho Regional</label>
+                                                <input type="text" class="form-control" placeholder="">
+                                            </div>
+                                            
+                                            <div class="form-group col-lg-3">
+                                                <label>Sigla Conselho Regional</label>
+                                                <input type="text" class="form-control" placeholder="">
+                                            </div>
+                                            
+                                            <div class="form-group col-lg-3">
+                                                <label>Numéro Conselho Regional</label>
+                                                <input type="text" class="form-control" placeholder="">
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="row">
+                                            <div class="form-group col-lg-6">
+                                                <label>Região do Conselho Regional</label>
+                                                <input type="text" class="form-control" placeholder="">
+                                            </div>
+                                            
+                                            <div class="form-group col-lg-2">
+                                                <label>Data Expedição</label>
+                                                <input type="text" class="form-control" placeholder="">
+                                            </div>
+                                            
+                                            <div class="form-group col-lg-2">
+                                                <label>Órgão Emissor</label>
+                                                <input type="text" class="form-control" placeholder="">
+                                            </div>
+                                            
+                                            <div class="form-group col-lg-2">
+                                                <label>Validade</label>
+                                                <input type="text" class="form-control" placeholder="">
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="col-lg-12 box">
+                                    <p>Dados Estrangeiros</p>
+                                    <form role="form" class="form-inline">
+                                        <div class="row">
+                                            <div class="form-group col-lg-3">
+                                                <label>Número RNE*</label>
+                                                <input type="text" class="form-control" placeholder="">
+                                            </div>
+                                            
+                                            <div class="form-group col-lg-3">
+                                                <label>Data Expedição*</label>
+                                                <input type="text" class="form-control" placeholder="">
+                                            </div>
+                                            
+                                            <div class="form-group col-lg-3">
+                                                <label>Órgão Emissor*</label>
+                                                <input type="text" class="form-control" placeholder="">
+                                            </div>
+                                            
+                                            <div class="form-group col-lg-3">
+                                                <label>Validade RNE*</label>
+                                                <input type="text" class="form-control" placeholder="">
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="row">
+                                            <div class="form-group col-lg-3">
+                                                <label>Número CTPS EX</label>
+                                                <input type="text" class="form-control" placeholder="">
+                                            </div>
+                                            
+                                            <div class="form-group col-lg-3">
+                                                <label>Data Expedição CTPS Ex</label>
+                                                <input type="text" class="form-control" placeholder="">
+                                            </div>
+                                            
+                                            <div class="form-group col-lg-3">
+                                                <label>Validade CTPS Ex</label>
+                                                <input type="text" class="form-control" placeholder="">
+                                            </div>
+                                            
+                                            <div class="form-group col-lg-3">
+                                                <label>Tipo de Visto</label>
+                                                <input type="text" class="form-control" placeholder="">
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <a href="" class="btn btn-acao btn-danger"><i class="fa fa-times" aria-hidden="true"></i> Cencelar</a>
+                                <a href="" class="btn btn-acao btn-primary"><i class="fa fa-check" aria-hidden="true"></i> Confirmar</a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script>
+        jQuery(function($) {
+            $("#campoData").mask("99/99/9999");
+            $("#cep").mask("99999-999");
+        });
+
+    </script>
+    <script src="../../js/plugins/fullcalendar/moment.min.js"></script>
+    <script src="../../js/jquery-3.1.1.min.js"></script>
+    <script src="../../js/bootstrap.min.js"></script>
+    <script src="../../js/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <script src="../../js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+
+    <!-- Custom and plugin javascript -->
+    <script src="../../js/inspinia.js"></script>
+    <script src="../../js/plugins/pace/pace.min.js"></script>
+
+    <!-- jQuery UI  -->
+    <script src="../../js/plugins/jquery-ui/jquery-ui.min.js"></script>
+
+    <!-- iCheck -->
+    <script src="../../js/plugins/iCheck/icheck.min.js"></script>
+
+    <!-- Full Calendar -->
+    <script src="../../js/plugins/fullcalendar/fullcalendar.min.js"></script>
+
+
+
+
+</body>
+
+</html>

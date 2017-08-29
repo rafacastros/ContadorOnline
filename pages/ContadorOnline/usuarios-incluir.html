@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>INSPINIA | Tabs </title>
+
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../font-awesome/css/font-awesome.css" rel="stylesheet">
+
+    <link href="../../css/plugins/iCheck/custom.css" rel="stylesheet">
+
+    <link href="../../css/plugins/fullcalendar/fullcalendar.css" rel="stylesheet">
+    <link href="../../css/plugins/fullcalendar/fullcalendar.print.css" rel='stylesheet' media='print'>
+
+    <link href="../../css/animate.css" rel="stylesheet">
+    <link href="../../css/style.css" rel="stylesheet">
+    <link href="../../css/contador-online.css" rel="stylesheet">
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+
+</head>
+
+<body>
+
+    <div class="row wrapper white-bg page-heading">
+
+    </div>
+    <div class="animated fadeIn">
+            <div class="col-lg-12">
+                <h1 class="tl-page">Cadastro de Usuários</h1>
+            </div>
+        <div class="ibox-title">
+            <div class="col-lg-12 box">
+                <p>Seus Dados</p>
+                <form role="form" class="form-inline">
+                    <div class="row">
+                        <div class="form-group col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                            <label>Nome*</label>
+                            <input type="text" class="form-control" placeholder="">
+                        </div>
+                        <div class="form-group col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                            <label>CPF*</label>
+                            <input type="text" class="form-control" placeholder="">
+                        </div>
+                        <div class="form-group col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                            <label>E-mail*</label>
+                            <input type="text" class="form-control" placeholder="">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            
+            <div class="col-lg-12 box">
+                <p>Acesso</p>
+                <form role="form" class="form-inline">
+                    <div class="row">
+                        <div class="form-group col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                            <label>Login*</label>
+                            <input type="text" class="form-control" disabled placeholder="Leonardo Panarella">
+                        </div>
+                        <div class="form-group col-lg-2 col-md-2 col-sm-2 col-xs-12">
+                            <label class="checkbox-inline"> <input type="checkbox" value="option1" id="inlineCheckbox1">Acesso Total</label>
+                        </div>
+                        <div class="form-group col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                            <label class="checkbox-inline"> <input type="checkbox" value="option1" id="inlineCheckbox1">Marcar/Desmarcar todos Contador Online</label>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            
+            <div class="col-lg-12 box">
+                <p>Departamentos</p>
+                <form role="form" class="form-inline">
+                    <div class="row">
+                        <div class="form-group col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                            <label class="checkbox-dep"> <input type="checkbox" value="option1" id="inlineCheckbox1"> Contabil-Departamento Contabil</label>
+                        </div>
+                        <div class="form-group col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                            <label class="checkbox-dep"> <input type="checkbox" value="option1" id="inlineCheckbox1"> Folha-Departamento Pessoal</label>
+                        </div>
+                        <div class="form-group col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                            <label class="checkbox-dep"> <input type="checkbox" value="option1" id="inlineCheckbox1"> G5-JR Departamento Fiscal</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                            <label class="checkbox-dep"> <input type="checkbox" value="option1" id="inlineCheckbox1"> Gescon-Departamento Financeiro</label>
+                        </div>
+                        <div class="form-group col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                            <label class="checkbox-dep"> <input type="checkbox" value="option1" id="inlineCheckbox1"> JR-Departamento Fiscal</label>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            
+            <div class="col-lg-12 box">
+                <p>Módulo Cliente</p>
+                <form role="form" class="form-inline">
+                    <div class="row">
+                        <div class="form-group col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                            <label class="checkbox-dep"> <input type="checkbox" value="option1" id="inlineCheckbox1"> Módulo Cliente Contábil</label>
+                        </div>
+                        <div class="form-group col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                            <label class="checkbox-dep"> <input type="checkbox" value="option1" id="inlineCheckbox1"> Módulo Cliente Folha</label>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            
+            <div class="col-lg-12 box">
+                <p>Mensagens</p>
+                <form role="form" class="form-inline">
+                    <div class="row">
+                        <div class="form-group col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                            <label class="checkbox-dep"> <input type="checkbox" value="option1" id="inlineCheckbox1"> Enviadas</label>
+                        </div>
+                        <div class="form-group col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                            <label class="checkbox-dep"> <input type="checkbox" value="option1" id="inlineCheckbox1"> Recebidas</label>
+                        </div>
+                        <div class="form-group col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                            <label class="checkbox-dep"> <input type="checkbox" value="option1" id="inlineCheckbox1"> Reuniões</label>
+                        </div>
+                        <div class="form-group col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                            <label class="checkbox-dep"> <input type="checkbox" value="option1" id="inlineCheckbox1"> Reuniões / Assinar Ata</label>
+                        </div>
+                        <div class="form-group col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                            <label class="checkbox-dep"> <input type="checkbox" value="option1" id="inlineCheckbox1"> SAC</label>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            
+            <div class="col-lg-12 box">
+                <p>Mensagens</p>
+                <form role="form" class="form-inline">
+                    <div class="row">
+                        <div class="form-group col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                            <label class="checkbox-dep"> <input type="checkbox" value="option1" id="inlineCheckbox1"> DARF</label>
+                        </div>
+                        <div class="form-group col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                            <label class="checkbox-dep"> <input type="checkbox" value="option1" id="inlineCheckbox1"> Financeiro</label>
+                        </div>
+                        <div class="form-group col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                            <label class="checkbox-dep"> <input type="checkbox" value="option1" id="inlineCheckbox1"> GARE</label>
+                        </div>
+                        <div class="form-group col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                            <label class="checkbox-dep"> <input type="checkbox" value="option1" id="inlineCheckbox1"> GPS</label>
+                        </div>
+                        <div class="form-group col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                            <label class="checkbox-dep"> <input type="checkbox" value="option1" id="inlineCheckbox1"> Manual</label>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            
+            <div class="col-lg-12 box">
+                <p>Downloads</p>
+                <form role="form" class="form-inline">
+                    <div class="row">
+                        <div class="form-group col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                            <label class="checkbox-dep"> <input type="checkbox" value="option1" id="inlineCheckbox1"> Visual</label>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            
+            <div class="col-lg-12 box">
+                <p>Processos</p>
+                <form role="form" class="form-inline">
+                    <div class="row">
+                        <div class="form-group col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                            <label class="checkbox-dep"> <input type="checkbox" value="option1" id="inlineCheckbox1"> Processos</label>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            
+            <div class="col-lg-12 box">
+                <p>Usuários</p>
+                <form role="form" class="form-inline">
+                    <div class="row">
+                        <div class="form-group col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                            <label class="checkbox-dep"> <input type="checkbox" value="option1" id="inlineCheckbox1"> Usuários</label>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            
+            <div class="col-lg-12 box">
+                <p>Arquivos Recebidos</p>
+                <form role="form" class="form-inline">
+                    <div class="row">
+                        <div class="form-group col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                            <label class="checkbox-dep"> <input type="checkbox" value="option1" id="inlineCheckbox1"> Arquivos Recebidos</label>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <a href="#" class="btn btn-acao btn-danger"><i class="fa fa-times" aria-hidden="true"></i> Cancelar</a>
+            <a href="#" class="btn btn-acao btn-primary"><i class="fa fa-check" aria-hidden="true"></i> Confirmar</a>
+            
+        </div>
+    </div>
+    <script>
+        jQuery(function($) {
+            $("#campoData").mask("99/99/9999");
+        });
+
+    </script>
+    <script src="../../js/plugins/fullcalendar/moment.min.js"></script>
+    <script src="../../js/jquery-3.1.1.min.js"></script>
+    <script src="../../js/bootstrap.min.js"></script>
+    <script src="../../js/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <script src="../../js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+
+    <!-- Custom and plugin javascript -->
+    <script src="../../js/inspinia.js"></script>
+    <script src="../../js/plugins/pace/pace.min.js"></script>
+
+    <!-- jQuery UI  -->
+    <script src="../../js/plugins/jquery-ui/jquery-ui.min.js"></script>
+
+    <!-- iCheck -->
+    <script src="../../js/plugins/iCheck/icheck.min.js"></script>
+
+    <!-- Full Calendar -->
+    <script src="../../js/plugins/fullcalendar/fullcalendar.min.js"></script>
+
+
+
+
+</body>
+
+</html>

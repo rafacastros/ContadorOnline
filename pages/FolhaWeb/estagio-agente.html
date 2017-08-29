@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>INSPINIA | Tabs </title>
+
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../font-awesome/css/font-awesome.css" rel="stylesheet">
+
+    <link href="../../css/plugins/iCheck/custom.css" rel="stylesheet">
+
+    <link href="../../css/plugins/fullcalendar/fullcalendar.css" rel="stylesheet">
+    <link href="../../css/plugins/fullcalendar/fullcalendar.print.css" rel='stylesheet' media='print'>
+
+    <link href="../../css/animate.css" rel="stylesheet">
+    <link href="../../css/style.css" rel="stylesheet">
+    <link href="../../css/contador-online.css" rel="stylesheet">
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+
+</head>
+
+<body>
+
+    <div class="row wrapper white-bg page-heading">
+
+    </div>
+    <div class="animated fadeIn">
+            <div class="col-lg-12">
+                <h1 class="tl-page">Listagem de Agentes de Integração</h1>
+                <a href="estagio-criar-agente.html" target="iframecontador" class="btn btn-calendar btn-primary"><i class="fa fa-plus" aria-hidden="true"></i> Criar Agente de Integração</a>
+            </div>
+        <div class="row ibox-title">
+            <div class="col-lg-12">
+                <div class="ibox collapsed">
+                    <div class="collapse-link ibox-title box-filter">
+                        <h5>Filtro de Pesquisa</h5>
+                        <div class="ibox-tools">
+                            <a>
+                                <i class="fa fa-chevron-up"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="row ibox-content box-content">
+                        <form role="form" class="form-inline">
+                            <div class="form-group col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                <label>Empresa</label>
+                                <input type="text" class="form-control" placeholder="">
+                            </div>
+                            <div class="form-group col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                                <label>CNPJ</label>
+                                <input type="text" class="form-control" placeholder="">
+                            </div>
+
+                            <div class="form-group col-lg-12">
+                                <a class="btn btn-filter btn-primary" type="submit"><i class="fa fa-search" aria-hidden="true"></i> Filtrar</a>
+                                <a class="btn btn-filter btn-info" type="submit"><i class="fa fa-trash" aria-hidden="true"></i> Limpar</a>
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script>
+        jQuery(function($) {
+            $("#campoData").mask("99/99/9999");
+        });
+
+    </script>
+    <script src="../../js/plugins/fullcalendar/moment.min.js"></script>
+    <script src="../../js/jquery-3.1.1.min.js"></script>
+    <script src="../../js/bootstrap.min.js"></script>
+    <script src="../../js/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <script src="../../js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+
+    <!-- Custom and plugin javascript -->
+    <script src="../../js/inspinia.js"></script>
+    <script src="../../js/plugins/pace/pace.min.js"></script>
+
+    <!-- jQuery UI  -->
+    <script src="../../js/plugins/jquery-ui/jquery-ui.min.js"></script>
+
+    <!-- iCheck -->
+    <script src="../../js/plugins/iCheck/icheck.min.js"></script>
+
+    <!-- Full Calendar -->
+    <script src="../../js/plugins/fullcalendar/fullcalendar.min.js"></script>
+
+
+
+
+</body>
+
+</html>
