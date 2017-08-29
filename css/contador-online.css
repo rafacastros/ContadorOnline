@@ -17,6 +17,7 @@ a.btn-close {
 .btn-calendar {
     margin-right: 5px;
     margin-top: 15px;
+    float: right;
 }
 
 .btn-calendar i {
