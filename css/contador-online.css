@@ -214,6 +214,10 @@ i.fa-plus-circle {
     background: #666;
 }
 
+.logo-cliente {
+    margin: 8px 10px;
+}
+
 @media screen and (max-width: 767px) {
     .btn-calendar {
         float: none;
@@ -227,5 +231,11 @@ i.fa-plus-circle {
 @media screen and (max-width: 480px) {
     ul.nav.nav-tabs li {
         width: 100%;
+    }
+    .count-info span {
+        display: none;
+    }
+    .navbar-top-links .dropdown-messages {
+        margin-left: -105px !important;
     }
 }
