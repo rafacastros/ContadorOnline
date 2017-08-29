@@ -20,6 +20,11 @@ a.btn-close {
     float: right;
 }
 
+.btn-calendar-index {
+    margin-right: 5px;
+    margin-top: 15px;
+}
+
 .btn-calendar i {
     margin-right: 10px;
 }
@@ -217,6 +222,12 @@ i.fa-plus-circle {
 
 .logo-cliente {
     margin: 8px 10px;
+}
+
+li.nav-header {
+    background-color: #0066b3;
+    border-bottom: 5px solid #f60 !important;
+    height: 60px;
 }
 
 @media screen and (max-width: 767px) {
